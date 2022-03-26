@@ -71,6 +71,7 @@ class _FetchDataPageState extends State<FetchDataPage> {
             itemBuilder: (context, index){
               DocumentSnapshot documentSnapshot = snapshot.data!.docs[index];
               return Card(
+                color: Colors.deepOrange,
                 child: ListTile(
                   title: Text(documentSnapshot['name']),
                 ),
